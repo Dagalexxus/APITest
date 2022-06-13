@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cat
+{% endblock %}
+
+{% block main %}
+    <div class = "alignCenter">
+        <h1>Get a picture of a cat!</h1>
+    </div>
+
+    <div>
+        {% for x in range(cat_url | length) %}
+            <img class = "catPicture" src = {{ cat_url[x] }} alt="a cat">
+        {% endfor %}
+    </div>
+
+    <form method = "GET" action = "/cat">
+        <div class = "alignCenter">
+            <button class="btn btn-dark" type="submit">Get more cat pictures!</button>
+        </div>
+
+        <div class = "alignCenter">
+            <input type = "number" name = "amount" min = "1" step = "1" max = "5" id = "amount" placeholder="How many cat pictures?">
+        </div>
+    </form>
+
+{% endblock %}

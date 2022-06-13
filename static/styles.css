@@ -1,0 +1,23 @@
+main{
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+input{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.catPicture{
+    border-style: solid;
+    border-radius: 15px;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+.alignCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
